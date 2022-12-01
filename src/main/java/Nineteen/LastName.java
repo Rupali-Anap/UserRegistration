@@ -16,6 +16,9 @@ public class LastName {
             System.out.println("Please enter email id:");
             String emailId = scanner.nextLine();
 
+            System.out.println("Please enter mobile no:");
+            String mobile = scanner.nextLine();
+
             // validate user input and display error message
             System.out.println("\nValidate Result:");
 
@@ -27,6 +30,10 @@ public class LastName {
 
             if(!validateEmailId(emailId))
                 System.out.println("Invalid Email ID");
+            else
+            if(!validateMobile(mobile))
+                System.out.println("Invalid Mobile No");
+
 
             else
                 System.out.println("Valid First Name. Thank you.");
@@ -43,6 +50,9 @@ public class LastName {
 
     private static boolean validateEmailId(String emailId) {
         return emailId.matches("[a-z]{3}(.+)[a-z]{3}@[bl](.+)[co](.+)");
+    }
+    private static boolean validateMobile(String mobile) {
+        return mobile.matches("(91)?[7-9][0-9]{9}");
     }
 
 }
