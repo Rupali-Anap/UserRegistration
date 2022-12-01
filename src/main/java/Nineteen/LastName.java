@@ -13,6 +13,9 @@ public class LastName {
             System.out.println("Please enter last name:");
             String lastName = scanner.nextLine();
 
+            System.out.println("Please enter email id:");
+            String emailId = scanner.nextLine();
+
             // validate user input and display error message
             System.out.println("\nValidate Result:");
 
@@ -35,5 +38,11 @@ public class LastName {
             return lastName.matches("[A-Z]{1}[a-z]{3,6}");
         }
 
+    private static boolean validateEmailId(String emailId) {
+        return emailId.matches("[a-z]{3}(.+)[a-z]{3}@[bl](.+)[co](.+)");
     }
+
+}
+
+
 
