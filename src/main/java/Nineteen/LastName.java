@@ -25,6 +25,9 @@ public class LastName {
             if(!validateLastName(lastName))
                 System.out.println("Invalid Last Name");
 
+            if(!validateEmailId(emailId))
+                System.out.println("Invalid Email ID");
+
             else
                 System.out.println("Valid First Name. Thank you.");
         }
