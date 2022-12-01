@@ -1,4 +1,4 @@
-/*package Nineteen;
+package Nineteen;
 import java.util.Scanner;
 import java.util.regex.*;
 public class FirstName {
@@ -6,7 +6,7 @@ public class FirstName {
 
         public static void main(String[] args) {
             // get user input
-        /*    Scanner scanner = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             System.out.println("Please enter name:");
             String firstName = scanner.nextLine();
 
@@ -25,6 +25,6 @@ public class FirstName {
             return firstName.matches("[A-Z]{1}[a-z]{3}");
         }
 
-    }*/
+    }
 
 
