@@ -4,9 +4,9 @@ import java.util.regex.*;
 public class FirstName {
 
 
-        public static void main(String[] args) {
+      /*  public static void main(String[] args) {
             // get user input
-        /*    Scanner scanner = new Scanner(System.in);
+         /*   Scanner scanner = new Scanner(System.in);
             System.out.println("Please enter name:");
             String firstName = scanner.nextLine();
 
