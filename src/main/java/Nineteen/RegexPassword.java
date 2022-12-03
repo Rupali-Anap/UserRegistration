@@ -17,10 +17,10 @@ public class RegexPassword {
                 System.out.println("Valid Input. Thank you.");
         }
 
-
+// validate password
 
         private static boolean validatePassword(String password) {
-            return password.matches("[A-Z]{1}[a-z]{8}[0-9]{1}");
+            return password.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$");
         }
 
     }
