@@ -12,7 +12,7 @@ public class RegexPassword {
             // validate user input and display error message
             System.out.println("\nValidate Result:");
             if(!validatePassword(password))
-                System.out.println("Invalid Mobile No");
+                System.out.println("Invalid Password");
             else
                 System.out.println("Valid Input. Thank you.");
         }
@@ -20,7 +20,7 @@ public class RegexPassword {
 //	 validate first name
 
         private static boolean validatePassword(String password) {
-            return password.matches("[a-z]{8}");
+            return password.matches("[A-Z]{1}[a-z]{8}");
         }
 
     }
